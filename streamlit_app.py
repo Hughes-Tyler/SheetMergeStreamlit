@@ -12,10 +12,6 @@ load_dotenv()
 USERNAME = os.getenv("MY_APP_USERNAME")
 PASSWORD = os.getenv("MY_APP_PASSWORD")
 
-# Debug prints on the Streamlit app
-st.write(f"Loaded USERNAME: {USERNAME}")
-st.write(f"Loaded PASSWORD: {PASSWORD}")
-
 # Initialize session state for authentication
 if 'authenticated' not in st.session_state:
     st.session_state.authenticated = False
