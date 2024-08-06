@@ -4,9 +4,6 @@ from io import BytesIO
 from dotenv import load_dotenv
 import os
 
-# Print environment variables before loading .env file
-print(f"Before loading .env - MY_APP_USERNAME: {os.getenv('MY_APP_USERNAME')}")
-print(f"Before loading .env - MY_APP_PASSWORD: {os.getenv('MY_APP_PASSWORD')}")
 
 # Load environment variables from .env file
 load_dotenv()
@@ -14,10 +11,6 @@ load_dotenv()
 # Get credentials from environment variables
 USERNAME = os.getenv("MY_APP_USERNAME")
 PASSWORD = os.getenv("MY_APP_PASSWORD")
-
-# Print environment variables after loading .env file
-print(f"After loading .env - MY_APP_USERNAME: {USERNAME}")
-print(f"After loading .env - MY_APP_PASSWORD: {PASSWORD}")
 
 # Debug prints on the Streamlit app
 st.write(f"Loaded USERNAME: {USERNAME}")
