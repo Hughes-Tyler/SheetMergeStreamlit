@@ -17,7 +17,7 @@ def merge_data(dfs, selected_headers):
     return merged_data
 
     # Main application
-st.title("Data Merger Tool by Hues Analytics")
+st.title("Data Merger Internal Tool")
 
     # File upload
 uploaded_files = st.file_uploader("Upload your Excel files", accept_multiple_files=True, type=["xlsx"])
